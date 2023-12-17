@@ -1,0 +1,122 @@
+body {
+    background-color: black;
+    margin: 0;
+    overflow: hidden;
+  }
+  
+  .sun {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: yellow;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    margin-top: -25px;
+    margin-left: -25px;
+  }
+  
+  .orbit {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  
+  .mer{
+background-color:grey;
+position: absolute;
+width: 20px;
+height: 20px;
+border-radius: 50%;
+
+  }
+  .ven{
+    background-color: rgb(246, 246, 46);
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    
+  }
+  .ear{
+    background-color: blue;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    
+  }
+  .moo{
+    background-color:lightgray;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    
+  }
+  .mar{
+    background-color: orangered;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    
+  }
+  .jup{
+    background-color: brown;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    
+  }
+  .sat{
+    background-color: yellowgreen;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    
+  }
+  .ura{
+    background-color: aqua;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    
+  }
+  .nep{
+    background-color: rgb(65, 65, 148);
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    
+  }
+  .plu{
+    background-color: whitesmoke;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    
+  }
+  
+  #mercury { animation: orbit 1.5s linear infinite; }
+  #venus   { animation: orbit 3.5s linear infinite; }
+  #earth   { animation: orbit 5s linear infinite; }
+  #moon    { animation: orbit 150s linear infinite; }
+  #mars    { animation: orbit 7.5s linear infinite; }
+  #jupiter { animation: orbit 26s linear infinite; }
+  #saturn  { animation: orbit 47.5s linear infinite; }
+  #uranus  { animation: orbit 95s linear infinite; }
+  #neptune { animation: orbit 150s linear infinite; }
+  #pluto   { animation: orbit 190s linear infinite; }
+  
+  @keyframes orbit {
+    from { transform: rotate(0deg) translateX(100px) rotate(0deg); }
+    to   { transform: rotate(360deg) translateX(100px) rotate(-360deg); }
+  }
